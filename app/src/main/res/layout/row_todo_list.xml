@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/general_margin"
+    android:background="#F4F1F1"
+    android:contextClickable="false"
+    android:padding="@dimen/general_padding">
+
+    <CheckBox
+        android:id="@+id/done_task_check"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:background="#CDC3C3"
+        app:layout_constraintEnd_toStartOf="@+id/task_header"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/task_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="263dp"
+        android:textColor="#5E5E5E"
+        android:textColorHint="@color/material_on_primary_emphasis_medium"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/done_task_check"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="task" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/date_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#616161"
+        app:checkedIcon="@color/white"
+        app:chipIcon="@drawable/ic_baseline_date_range_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_header"
+        tools:ignore="TextContrastCheck"
+        tools:text="May,14" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

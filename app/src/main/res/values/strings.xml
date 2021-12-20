@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TodoList</string>
+    <string name="text_task_check">Done</string>
+    <string name="Description">TODO</string>
+    <string name="edt_task_text_hint">Enter your task</string>
+
+    <string name="rd_high">HIGH</string>
+    <string name="rd_medium">MEDIUM</string>
+    <string name="rd_low">LOW</string>
+    <string name="chip_tomorrow_text">Tomorrow</string>
+    <string name="chip_today_text">Today</string>
+    <string name="chip_nextweek_text">NextWeek</string>
+
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo">TODO</string>
+</resources>

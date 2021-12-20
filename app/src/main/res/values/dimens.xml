@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_padding">12dp</dimen>
+    <dimen name="general_margin">5dp</dimen>
+    <dimen name="chip_icon_size">30dp</dimen>
+    <dimen name="chip_icon_margin">0dp</dimen>
+    <dimen name="rd_group_margin">2dp</dimen>
+</resources>
