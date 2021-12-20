@@ -5,4 +5,5 @@
     <dimen name="chip_icon_size">30dp</dimen>
     <dimen name="chip_icon_margin">0dp</dimen>
     <dimen name="rd_group_margin">2dp</dimen>
+    <dimen name="Icon_size">18dp</dimen>
 </resources>

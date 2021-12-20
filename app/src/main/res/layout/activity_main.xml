@@ -12,6 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_todo_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fbv_btn_new"
             android:layout_width="wrap_content"
@@ -22,7 +31,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ic_baseline_control_point_24"
-            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-<include layout="@layout/bottom_sheet"/>
+
+    <include
+        layout="@layout/bottom_sheet"
+        android:visibility="gone" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -2,6 +2,7 @@ package com.example.todolist.view.model;
 
 import android.renderscript.RenderScript;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -15,6 +16,18 @@ public class Task {
     @PrimaryKey(autoGenerate = true)
     @NotNull()
     private int taskId ;
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "Task{" +
+                "taskId=" + taskId +
+                ", taskHeader='" + taskHeader + '\'' +
+                ", priority=" + priority +
+                ", createDate=" + createDate +
+                ", addDate=" + addDate +
+                '}';
+    }
 
     public Task(String taskHeader, Priority priority, Date createDate, Date addDate) {
         this.taskHeader = taskHeader;
