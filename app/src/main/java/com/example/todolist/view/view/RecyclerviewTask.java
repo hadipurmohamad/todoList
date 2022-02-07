@@ -20,14 +20,16 @@ import com.example.todolist.view.model.Task;
 import com.google.android.material.chip.Chip;
 
 import java.util.List;
-
+//برای ایجاد recyclerview باید از کلاس  RecyclerView.Adapter ارث بری کنیم و این کلاس خود یک نوع کلاس می خواهد که داخل < > نوشته می شود
+//این کلاس را باید ایجاد کنیم که می تواند زیر کلاس همین کلاس هم باشد که در اینجا این چنین عمل کردیم
+// و خود همین کلاس هم باید از کلاس RecyclerView.viewholder  ارث بری کند زیر کلاس ما هم در این جا  نامش  viewholder است
 public class RecyclerviewTask extends RecyclerView.Adapter<RecyclerviewTask.Viewholder> {
     private final List<Task> allTask;
     public static final String TAG = "hadi";
     private final onItemClick ontodoItemClick;
     public int id;
 
-
+//بعد از ساخت کلاسها و ارث بری ها متد هایی هستند که باید  override کنیم
     public RecyclerviewTask(List<Task> allTask, onItemClick onItemClick) {
         this.allTask = allTask;
 
