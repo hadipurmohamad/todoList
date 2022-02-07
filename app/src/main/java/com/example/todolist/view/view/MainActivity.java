@@ -32,13 +32,17 @@ public class MainActivity extends AppCompatActivity implements sendDataForAdd, o
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 shearedViemodel= new ViewModelProvider(this).get(com.example.todolist.view.view.shearedViemodel.class);
-
+//  یکی از کاربرد های  viewmodel  می توان از ان به عنوان منتقل کننده اطلاعات استفاده کرد که اطلاعات را در خود نگه می دارد و می توان
+// در کلاس دیگر ان اطلاعات را بدست آورد
 
         recyclerView = findViewById(R.id.recycler_todo_task);
         viewmodelTask = new ViewModelProvider.AndroidViewModelFactory(this.getApplication()).create(ViewmodelTask.class);
+        //برای اجرای view model باید مثل توابع بالا  viewmodel  خود را ایجاد کنیم و  به متغییر خود مقدار دهی کنیم
         constraintLayout = findViewById(R.id.bottomsheet_constrain);
         BottomSheetBehavior<ConstraintLayout> bottomSheetBehavior = BottomSheetBehavior.from(constraintLayout);
+        // برای ساخت باتن شیت باید مثل کد بالا عمل کنیم و در آخر یک constraintlayout به آن پاس دهیم
         bottomSheetBehavior.setPeekHeight(BottomSheetBehavior.STATE_HIDDEN);
+        // اندازه اولیه باتن شیت را در کد بالا مشخص می کنیم
         buttomSheetTodoList = new buttomSheetTodoList(this);
         floatingActionButton = findViewById(R.id.fbv_btn_new);
         floatingActionButton.setOnClickListener(view -> {
